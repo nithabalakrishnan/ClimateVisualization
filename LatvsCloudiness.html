@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Lattitude</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown">
+    
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="latvstemperature.html">Max Temperature</a></li>
+                      <li><a href="LatvsHumidity.html">Humidity</a></li>
+                      <li><a href="LatvsCloudiness.html">Cloudiness</a></li>
+                      <li><a href="LatvsWindSpeed.html">Wind Speed</a></li>
+
+                    </ul>
+                 
+            </li>
+            <li><a href="Comparison.html">Comparison</a></li>
+            <li><a href="weatherData.html" data-toggle="collapse" data-target="#data">Data</a></li>
+            <li><a href="#contact" data-toggle="collapse" data-target="#contact">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+  
+  <!-- First Container -->   
+  <div class="container-fluid bg-2 text-justify  well well-lg">
+      <div class="row">
+          <div class="col-lg-7">
+              <div class="well well-lg">
+                <h3>Summary: Latitude vs.X</h3>
+                    <p>
+                        <img src="Images/LatvsCloudiness.png" class="img-responsive" style="display:inline; float: left; padding-right: 15px; padding-bottom: 15px;" alt="Bird" width="300" height="300"/>
+                        The purpose of this project was to analyze how weather changes as you get closer to the equatr. To accomplish this analysis, we first 
+                        pulled data from the OpenWeatherMap API to assemble a dataset over 500 cities.<br>
+                                                
+                        After assmbling the dataset, used Matplotlib to plot various aspects of the weather vs. lattitude. Factors 
+                        we looked at included: temperature, cloudiness,wind,and humidity. This site provides the source data and visualizations created as part of the 
+                        the analysis, as well as explanations and descriptions and any trends and correlations witnessed.
+                    </p>
+              </div>
+              
+            </div>   
+        <div class="col-lg-5"> 
+            <div class="well well-lg">
+                <h3>Visualizations</h3><br>
+                <div class="row">
+                    <div class="col-sm-6">
+                            <h5></h5><br>
+                            <a href = "latvstemperature.html">
+                              <img src="Images/LatvsMaxTemp.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                            </a>
+                            <h5></h5><br>
+                            <a  href = "LatvsHumidity.html">
+                              <img src="Images/LatvsHumidity.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                            </a>
+                            
+                          </div>
+                          <div class="col-sm-6">
+                              <h5></h5><br>
+                            <a  href = "LatvsCloudiness.html">
+                                <img src="Images/LatvsCloudiness.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                            </a>
+                            <h5></h5><br>
+                            <a href = "LatvsWindSpeed.html">
+                                <img src="Images/LatvsWindSpeed.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                            </a>
+                      </div>
+                </div>
+            </div>
+        </div>  
+      </div>
+    <!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey collapse">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 48 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> California, US</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +1 555-555-5555</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> nitha@something.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  </div>
+  
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p class="footerStyle"><br/>@Copyright Coding Bootcamp 2019</p> 
+</footer>
+</body>
+</html>

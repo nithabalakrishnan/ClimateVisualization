@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Lattitude</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown">
+    
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="latvstemperature.html">Max Temperature</a></li>
+                      <li><a href="LatvsHumidity.html">Humidity</a></li>
+                      <li><a href="LatvsCloudiness.html">Cloudiness</a></li>
+                      <li><a href="LatvsWindSpeed.html">Wind Speed</a></li>
+
+                    </ul>
+                 
+            </li>
+            <li><a href="#">Comparison</a></li>
+            <li><a href="weatherData.html" data-toggle="collapse" data-target="#data">Data</a></li>
+            <li><a href="#contact" data-toggle="collapse" data-target="#contact">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+  
+    <!-- Main content container -->
+    <div class ="container-fluid text-justify  well well-lg ">
+        <div class="row">
+            <div class="col-sm-8" >
+                    <div class="well well-sm text-default">
+                        <h3 class ="text-center ">Comparisons: Lattitude vs.X</h3><br>
+                    </div>
+            </div > 
+        </div>
+        
+        <div class="col-sm-8" >
+            <div class="well well-sm">  
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <div>
+                                    <p>Click any plot to get an in-depth analysis</p>
+                                </div>
+                                <h5> </h5><br>
+                                <div>
+                                <h4 class ="text-center">vs. Max Temperature</h4>
+                                <a href = "latvstemperature.html" class = 'active'>
+                                  <img src="Images/LatvsMaxTemp.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                                </a>
+                                 </div>
+                                <h5></h5><br>
+                                <h4 class ="text-center">vs.Humidity</h4>
+                                <a  href = "LatvsHumidity.html">
+                                  <img src="Images/LatvsHumidity.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                                </a>
+                                
+                              </div>
+                              <div class="col-sm-6">
+                                  <h5></h5><br>
+                                  <h4 class ="text-center">vs. Cloudiness</h4>
+                                <a  href = "LatvsCloudiness.html">
+                                    <img src="Images/LatvsCloudiness.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                                </a>
+                                <h5></h5><br>
+                                <h4 class ="text-center">vs. Wind Speed</h4>
+                                <a href = "LatvsWindSpeed.html">
+                                    <img src="Images/LatvsWindSpeed.png" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350">
+                                </a>
+                              </div>
+                        </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer class="page-footer bg-4 text-center">
+        <p class="footerStyle"><br/>@Copyright Coding Bootcamp 2019</p> 
+    </footer>
+</body>
+</html>
